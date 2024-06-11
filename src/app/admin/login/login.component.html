@@ -1,0 +1,14 @@
+<h3 class="text-center">Đăng Nhập</h3>
+<form (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm" >
+  <div id="user-data">
+  <div class="form-group">
+  <label>Tài khoản</label>
+  <input type="email" class="form-control" ngModel name="user">
+</div>
+<div class="form-group">
+<label>Mật khẩu</label>
+<input type="password" class="form-control" ngModel name="pass">
+</div>
+<button type="submit" class="btn btn-primary">Đăng Nhập</button>
+</div>
+</form>

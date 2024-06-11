@@ -1,0 +1,40 @@
+<div class="card">
+  <div class="card-header">
+    <h4>Add New Product</h4>
+  </div>
+  <div class="card-body">
+    <form (ngSubmit)="addProduct()">
+      <div class="form-group">
+        <label for="productName">Product Name:</label>
+        <input type="text" class="form-control" id="productName" [(ngModel)]="newProduct.productName" name="productName" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="productCode">Product Code:</label>
+        <input type="text" class="form-control" id="productCode" [(ngModel)]="newProduct.productCode" name="productCode" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="releaseDate">Release Date:</label>
+        <input type="date" class="form-control" id="releaseDate" [(ngModel)]="newProduct.releaseDate" name="releaseDate" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea class="form-control" id="description" [(ngModel)]="newProduct.description" name="description" required></textarea>
+      </div>
+      
+      <div class="form-group">
+        <label for="price">Price:</label>
+        <input type="number" class="form-control" id="price" [(ngModel)]="newProduct.price" name="price" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="starRating">Star Rating:</label>
+        <input type="number" class="form-control" id="starRating" [(ngModel)]="newProduct.starRating" name="starRating" required>
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Add Product</button>
+    </form>
+  </div>
+</div>
